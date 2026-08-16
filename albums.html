@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ma collection — La Discothèque</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="logo">LA <span>DISCOTHÈQUE</span></div>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="albums.html" aria-current="page">Ma collection</a>
+      <a href="wishlist.html">Envies</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="section">
+    <div class="section-head">
+      <h2>Ma collection</h2>
+    </div>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Chercher un artiste ou un titre…">
+      <select id="sort">
+        <option value="date-desc">Ajout le plus récent</option>
+        <option value="rating-desc">Meilleure note</option>
+        <option value="artist-asc">Artiste (A → Z)</option>
+      </select>
+    </div>
+
+    <div class="sleeve-grid" id="owned-grid"></div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">Fait maison, hébergé gratuitement sur GitHub Pages.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>renderOwnedList();</script>
+</body>
+</html>
